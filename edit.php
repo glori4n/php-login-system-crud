@@ -49,6 +49,11 @@ if(isset($_SESSION["id"]) && !empty($_SESSION["id"])){
     <input type="submit" name="submit">
 </form>
 
+<form method="POST" enctype="multipart/form-data" action="receiver.php">
+    <input type="file" name="file[]" multiple>
+    <input type="submit" name="submit" value="Submit File(s)">
+</form>
+
 <a href="index.php">Back</a>
 
 <?php
