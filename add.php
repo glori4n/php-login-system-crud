@@ -3,15 +3,19 @@
 <?php
 session_start();
 
+// Detects if there is someone logged in.
 if(isset($_SESSION["id"]) && !empty($_SESSION["id"])){
     require 'config.php';
 
+
+// Receives data from forms.
 $name = addslashes(@$_POST["name"]);
 $email = addslashes(@$_POST["email"]);
 $password = addslashes(md5(@$_POST["password"]));
 
 $sql = "INSERT INTO users (name, email, password) values ('$name', '$email', '$password')";
 
+// Detects if there is a form submission, and sends $sql's query to PDO.
 if(isset($_POST["submit"])){
     $pdo->query($sql);
     header('Location: index.php');

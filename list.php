@@ -5,13 +5,19 @@ session_start();
 
 echo "<div style='text-align:center'><a href='logout.php'>Logout</a></div>";
 
+// Detects if there someone logged in.
 if(isset($_SESSION['id']) && !empty($_SESSION['id'])){
+
+    // Receives PDO's configuration and opens a connection with the Database.
     require 'config.php';
+
+    // Fetches all users and sends it to the PDO.
     $sql = "SELECT * FROM users";
     $sql = $pdo->query($sql);
     
 ?>
 
+<!-- Table for the users' display. -->
 <table width="100%">
     <tr>
     <th>Name</th>
