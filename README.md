@@ -5,4 +5,4 @@ A raw user crud made on PHP that applies most of the concepts involved in the st
 
 This is an direct upgrade to my previous project: https://github.com/glori4n/php-user-crud.
 
-The SQL file will contain the database as well as users to login, you can create yours directly into it your SQL IDE or you can use any of the accounts, all of their passwords are 123123123.
+The SQL file will contain the database as well as users to login, you can create yours or you can use any of the fictional emails, all of their passwords are 123123123.
