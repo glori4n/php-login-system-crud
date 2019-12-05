@@ -42,4 +42,6 @@ if(isset($_POST["submit"])){
     header("Location: login.php");
 }
 
+require 'footer.php';
+
 ?>

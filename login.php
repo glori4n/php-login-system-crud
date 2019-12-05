@@ -53,4 +53,6 @@ if(!isset($_SESSION["id"]) && empty($_SESSION["id"])){
     header("Refresh:3; url=list.php");
 }
 
+require 'footer.php';
+
 ?>

@@ -40,4 +40,7 @@ if($_FILES['file']['size'][0] > 0){
     echo "No files were added.";
     header("Refresh:2; url=".$_SERVER['HTTP_REFERER']);
 }
+
+require 'footer.php';
+
 ?>
